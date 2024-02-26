@@ -1,0 +1,3 @@
+Tests: 
+    - {name: seven_seg, sim: RTL}
+   

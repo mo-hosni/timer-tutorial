@@ -1,0 +1,15 @@
+
+CARAVEL_ROOT: /pathto/caravel
+
+MCW_ROOT: "pathto/caravel_mgmt_soc_litex/"
+
+USER_PROJECT_ROOT: pathto/user_project/
+PDK_ROOT: "pathto/pdk"
+
+PDK: sky130A
+
+clk: 25  
+
+caravan: false
+
+emailto: [None]
