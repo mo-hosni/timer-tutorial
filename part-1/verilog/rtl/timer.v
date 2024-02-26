@@ -15,7 +15,7 @@ module timer #(parameter  CC = 1,
 (
     input   wire        clk,
     input   wire        rst,
-    output  wire [6:0]  seven_seg,
+    output  wire [7:0]  seven_seg,
     output  wire [3:0]  digit_en     
 );
     localparam DIG_DURATION = (FREQ)/(4 * SCAN_PER_SEC);
