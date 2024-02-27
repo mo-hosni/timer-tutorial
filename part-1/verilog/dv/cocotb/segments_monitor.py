@@ -1,7 +1,7 @@
 from cocotb.triggers import ClockCycles, Edge, First, NextTimeStep
 import cocotb
 class SegmentsMonitor:
-    def __init__(self, caravelEnv, digit_en_pins=[29, 28, 27, 26], digit_data_pins=[37, 36, 35, 34, 33, 32, 31, 30]):
+    def __init__(self, caravelEnv, digit_en_pins=[30, 29, 28, 27], digit_data_pins=[37, 36, 35, 34, 33, 32, 31]):
         self.digit_en_pins = digit_en_pins
         self.digit_data_pins = digit_data_pins
         self.caravelEnv = caravelEnv
@@ -27,14 +27,14 @@ class SegmentsMonitor:
 
     def __int_to_seg(self, digit):
         return {
-            0xFE: 0,
-            0xB0: 1,
-            0xED: 2,
-            0xF9: 3,
-            0xB3: 4,
-            0xDB: 5,
-            0xDF: 6,
-            0xF0: 7,
-            0xFF: 8,
-            0xFB: 9,
+            0x7E: 0,
+            0x30: 1,
+            0x6D: 2,
+            0x79: 3,
+            0x33: 4,
+            0x5B: 5,
+            0x5F: 6,
+            0x70: 7,
+            0x7F: 8,
+            0x7B: 9,
         }[digit]
